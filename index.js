@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const Note = require('./models/Note')
-const User = require('./models/User')
+const Note = require('./models/Note');
+const User = require('./models/User');
 mongoose.connect('mongodb://localhost/notesAppDB', {})
 .then(db => console.log('Conexión a la base de datos establecida'))
 .catch(err => console.error(err));
